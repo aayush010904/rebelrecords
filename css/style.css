@@ -155,8 +155,24 @@ body {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#socials-container a {
+  margin: 0 10px;
+}
+
+#socials-container img {
+  
+  height: 3rem;
+  margin: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#socials-container img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 
 .ss-menu img {
