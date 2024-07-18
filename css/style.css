@@ -30,13 +30,13 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.187);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 .website-name {
   font-size: 24px;
@@ -608,6 +608,29 @@ p.pink:hover {
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border-radius: 10px;
 }
+.video {
+  padding: 20px;
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.25); /* Slight white overlay */
+  backdrop-filter: blur(20px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-content {
+  max-width: 100%;
+}
+
 .band {
   padding: 20px;
   background: rgba(0, 0, 0, 0.5); /* Slight white overlay */
@@ -622,8 +645,8 @@ p.pink:hover {
 }
 
 .music {
-  margin-bottom: 20px;
-  border-radius: 10px;
+  margin-top: 20px;
+  
   padding: 20px;
   background: rgba(0, 0, 0, 0.25); /* Slight white overlay */
   backdrop-filter: blur(20px); /* Blur effect */
@@ -810,11 +833,11 @@ footer p.bolder {
 }
 footer .socialBanner {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 footer img {
-  max-width: 24px;
+  max-width: 50px;
   margin: 0 2px 0 2px;
   cursor: pointer;
 }
