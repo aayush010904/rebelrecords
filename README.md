@@ -1,1 +1,1 @@
-This is a sit for my music space
+This is a site for my music space
