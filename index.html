@@ -96,11 +96,11 @@
       <div class="separator animatableOpacity"></div>
       <iframe
         style="border-radius: 12px"
-        src="https://open.spotify.com/embed/album/6yO9wpfVL13e7q0FF47ihk?utm_source=generator"
+        src="https://open.spotify.com/embed/track/5e1VaKYFPmv85pN90R1EXk?utm_source=generator"
         width="100%"
-        height="425"
+        height="352"
         frameborder="0"
-        allowfullscreen
+        allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
@@ -165,8 +165,14 @@
       <h2 class="animatableX">Discover</h2>
       <div class="separator animatableOpacity"></div>
       <div class="imgContent">
+        <div class="card animatableY" data-url="https://push.fm/fl/shefl">
+          <img class="lazyload" src="./img/she.jpg" alt="She" />
+          <p><b>She</b></p>
+          <p>2024</p>
+        </div>
+        
         <div class="card animatableY" data-url="https://push.fm/fl/voidfl">
-          <img class="lazyload" src="./img/Void-CoverArt.jpeg" alt="VOID" />
+          <img class="lazyload" src="./img/void.png" alt="VOID" />
           <p><b>VOID - EP</b></p>
           <p>2024</p>
         </div>
@@ -284,6 +290,23 @@
       <p>&copy; Copyright 2024 | All Rights Reserved</p>
     </footer>
 
+    <!-- Modal HTML -->
+    <div id="releaseModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="img/she.jpg"
+          alt="She"
+          style="width: 200px; height: 200px"
+        />
+        <h2>New Release: She is out now!</h2>
+        <p>Listen to the latest release on your favorite platform.</p>
+        <a href="https://push.fm/fl/shefl" target="_blank">
+          <button class="listen-btn">Listen Now</button>
+        </a>
+      </div>
+    </div>
+
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"
@@ -316,5 +339,32 @@
       crossorigin
     ></script>
     <script defer src="js/mainFunctions.js"></script>
+    <!-- <script>
+      window.onload = function() {
+        alert("🎉 New Release: She is out now! Listen on your favorite platform.");
+      };
+    </script> -->
+    <script>
+      window.onload = function() {
+        var modal = document.getElementById("releaseModal");
+        var span = document.getElementsByClassName("close")[0];
+    
+        // Show the modal when the page loads
+        modal.style.display = "flex";
+    
+        // Close the modal when the user clicks the 'x'
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+    
+        // Close the modal when the user clicks anywhere outside of it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      };
+    </script>
+    
   </body>
 </html>
